@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 12px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
@@ -15,19 +14,17 @@ body {
   align-items: center;
   margin: 20px auto 0 auto;
   background-color: blue;
-  border: 1px solid black;
 }
 
 .logos {
   display: flex;
-  padding: 0 5px;
+  padding-left: 15px;
 }
 
 .logos div {
   width: 50px;
   height: 50px;
   background-color: #ffffff;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +35,7 @@ body {
   flex-grow: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  font-size: 12px;
   color: #ffffff;
   font-weight: bold;
   padding: 0 5px;
@@ -46,10 +43,27 @@ body {
 
 .familiar {
   background-color: red;
+  align-items: center;
 }
 
 .join-team {
   background-color: blue;
+  flex-direction: column;
+}
+
+.join-team span {
+  text-align: center;
+}
+
+.cmg-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cmg {
+  width: 30px;
+  height: auto;
+  padding-top: 2px;
 }
 
 @media screen and (max-width: 468px) {
@@ -65,13 +79,24 @@ body {
   }
 
   .logos div {
-    width: 148px;
-    height: 148px;
+    width: 150px;
+    height: 150px;
   }
 
   .text-box {
+    font-size: 30px;
     padding: 0;
     height: calc((600px - 450px) / 2);
+  }
+
+  .join-team {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .cmg {
+    padding-top: 20px;
   }
 }
 
@@ -83,17 +108,22 @@ body {
   }
 
   .logos div {
-    width: 118px;
-    height: 118px;
+    width: 120px;
+    height: 120px;
   }
 
   .text-box {
+    font-size: 18px;
     padding: 0;
     height: calc(400px - 360px);
   }
 
   .familiar {
     display: none;
+  }
+
+  .cmg {
+    padding-top: 0;
   }
 }
 
@@ -107,7 +137,7 @@ body {
 
   .logos {
     justify-content: center;
-    padding-top: 15px;
+    padding: 15px 0;
   }
 
   .logos div {
@@ -116,11 +146,21 @@ body {
   }
 
   .text-box {
+    font-size: 14px;
     padding: 0;
     height: calc((600px - 510px) / 2);
   }
 
   .familiar {
     display: flex;
+  }
+
+  .join-team {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .cmg {
+    padding-right: 5px;
   }
 }
