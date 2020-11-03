@@ -50,3 +50,49 @@ body {
 .join-team {
   background-color: blue;
 }
+
+@media screen and (max-width: 468px) {
+  .container {
+    width: 300px;
+    height: 600px;
+    flex-wrap: wrap;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .logos div {
+    width: 148px;
+    height: 148px;
+  }
+
+  .text-box {
+    padding: 0;
+    height: calc((600px - 450px) / 2);
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    width: 300px;
+    height: 600px;
+    flex-wrap: wrap;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .logos div {
+    width: 148px;
+    height: 148px;
+  }
+
+  .text-box {
+    padding: 0;
+    height: calc((600px - 450px) / 2);
+  }
+}
