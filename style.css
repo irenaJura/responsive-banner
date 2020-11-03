@@ -43,6 +43,7 @@ body {
   font-weight: bold;
   padding: 0 5px;
 }
+
 .familiar {
   background-color: red;
 }
@@ -93,5 +94,33 @@ body {
 
   .familiar {
     display: none;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .container {
+    width: 120px;
+    height: 600px;
+    flex-wrap: wrap;
+    align-items: unset;
+  }
+
+  .logos {
+    justify-content: center;
+    padding-top: 15px;
+  }
+
+  .logos div {
+    width: 80px;
+    height: 80px;
+  }
+
+  .text-box {
+    padding: 0;
+    height: calc((600px - 510px) / 2);
+  }
+
+  .familiar {
+    display: flex;
   }
 }
