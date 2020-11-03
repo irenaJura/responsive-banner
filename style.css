@@ -76,23 +76,22 @@ body {
 
 @media screen and (max-width: 300px) {
   .container {
-    width: 300px;
-    height: 600px;
+    width: 240px;
+    height: 400px;
     flex-wrap: wrap;
-  }
-
-  .logos {
-    flex-wrap: wrap;
-    padding: 0;
   }
 
   .logos div {
-    width: 148px;
-    height: 148px;
+    width: 118px;
+    height: 118px;
   }
 
   .text-box {
     padding: 0;
-    height: calc((600px - 450px) / 2);
+    height: calc(400px - 360px);
+  }
+
+  .familiar {
+    display: none;
   }
 }
