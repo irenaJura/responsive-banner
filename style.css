@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 20px auto 0 auto;
-  background-color: blue;
+  background-color: #014372;
 }
 
 .logos {
@@ -30,22 +30,22 @@ body {
 }
 
 .logos div:nth-child(1) {
-  background-color: #ffffff;
+  background-color: #f3f3f3;
 }
 .logos div:nth-child(2) {
-  background-color: limegreen;
+  background-color: #02a750;
 }
 .logos div:nth-child(3) {
-  background-color: #000000;
+  background-color: #383838;
 }
 .logos div:nth-child(4) {
   background-color: #f0db4f;
 }
 .logos div:nth-child(5) {
-  background-color: lightgreen;
+  background-color: #00a652;
 }
 .logos div:nth-child(6) {
-  background-color: violet;
+  background-color: #7e55a4;
 }
 
 .logos img {
@@ -68,12 +68,12 @@ body {
 }
 
 .familiar {
-  background-color: red;
+  background-color: #ed1b24;
   align-items: center;
 }
 
 .join-team {
-  background-color: blue;
+  background-color: #014373;
   flex-direction: column;
 }
 
@@ -107,6 +107,18 @@ body {
   .logos div {
     width: 150px;
     height: 150px;
+    transform: scale(1);
+    animation: transform 1s ease-in;
+  }
+
+  @keyframes transform {
+    from {
+      transform: scale(0.5);
+    }
+
+    to {
+      transform: scale(1);
+    }
   }
 
   .logos img {
@@ -144,6 +156,17 @@ body {
   .logos div {
     width: 120px;
     height: 120px;
+    animation: changeHeight 1s ease-in;
+  }
+
+  @keyframes changeHeight {
+    from {
+      height: 150px;
+    }
+
+    to {
+      height: 120px;
+    }
   }
 
   .logos img {
@@ -185,8 +208,18 @@ body {
   .logos div {
     width: 80px;
     height: 80px;
+    animation: changeWidth 1s ease-in;
   }
 
+  @keyframes changeWidth {
+    from {
+      width: 120px;
+    }
+
+    to {
+      width: 80px;
+    }
+  }
   .logos img {
     width: 50px;
   }
